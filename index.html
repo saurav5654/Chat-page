@@ -1,0 +1,83 @@
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="notch"></div>
+        <div class="chat-container">
+            <header class="chat-header">
+                <button class="back-button">
+                    <title>Chat Screen</title>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="chat-info">
+                    <img src="images/avatar.jpg" alt="Samuel Green" class="avatar">
+                    <div class="user-details">
+                        <div class="chat-title">Samuel Green</div>
+                        <div class="user-status">Available to walk</div>
+                    </div>
+                </div>
+                <button class="more-options">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                </button>
+            </header>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Example messages will be added here -->
+                <div class="message incoming">
+                    <div class="message-bubble">
+                        <p>That sounds great. I'd be happy with that.</p>
+                    </div>
+                </div>
+                <div class="message incoming">
+                    <div class="message-bubble">
+                        <p>Could you send over some pictures of your dog, please?</p>
+                    </div>
+                </div>
+                <div class="message outgoing">
+                    <div class="message-bubble">
+                        <p>Here are a few pictures. She's a happy girl!</p>
+                    </div>
+                </div>
+                <div class="message outgoing image-gallery-message">
+                    <div class="image-previews">
+                        <img src="images/dog-image-1.jpg" alt="Dog 1">
+                        <img src="images/dog-image-2.jpg" alt="Dog 2">
+                        <img src="images/dog-image-3.jpg" alt="Dog 3">
+                    </div>
+                </div>
+                <div class="message incoming">
+                    <div class="message-bubble">
+                        <p>Can you make it?</p>
+                    </div>
+                </div>
+                <div class="message outgoing">
+                    <div class="message-bubble">
+                        <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                    </div>
+                </div>
+                <div class="message incoming booking-options">
+                    <div class="booking-button">
+                        <span>30-minute walk</span>
+                        <span class="price">$29</span>
+                    </div>
+                </div>
+                <div class="message incoming booking-options">
+                    <div class="booking-button active">
+                        <span>1-hour walk</span>
+                        <span class="price">$49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button id="sendMessageBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
